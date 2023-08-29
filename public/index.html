@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeScript Tutorial</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  </style>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Finance LogBox<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
+      </svg><sup style="font-size:12px;">tm</sup>
+    </h1>
+    <!-- output list -->
+    <ul class="item-list">
+    </ul>
+  </div>
+
+  <footer>
+    <form class="new-item-form">
+      <div class="field">
+        <label>Type:</label>
+        <select id="type">
+          <option value="sent">sent</option>
+          <option value="recieved">recieved</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>To / From:</label>
+        <input type="text" id="tofrom">
+      </div>   
+      <div class="field">
+        <label>Details:</label>
+        <input type="text" id="details">
+      </div>
+      <div class="field">
+        <label>Amount ($):</label>
+        <input type="number" id="amount">
+      </div>
+      <button>Add</button>
+    </form>
+
+    <a href="#">MikeyCodes</a>
+   
+     
+ 
+  </footer>
+  <div class="blur-effect"></div>
+  <div class="alert-container">
+    <div>
+      <lord-icon
+      src="https://cdn.lordicon.com/ttioogfl.json"
+      trigger="loop"
+      colors="primary:#333,secondary:#ffffff,tertiary:#8d0aff,quaternary:#4030e8,quinary:#f9c9c0"
+      style="width:100px;height:100px">
+     </lord-icon>
+    </div>
+    <div>
+        <p>Oops😑,you have to fill all boxes</p>
+    </div>
+    <div class="cancel-alert" style="font-size: 30px;color: rgb(45, 37, 37);position: absolute;top: -3px;right: 5px;cursor: pointer;">&times;</div>
+  </div>
+  <script type="module" src='Rootindex.js'></script>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</body>
+</html>
